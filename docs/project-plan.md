@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [4b3391b] |
-| 2026-10-08 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted by S01, the Product Owner<br>Reviews open issue updated | [16183cc] |
+| 2026-10-08 | Deprecated | Jens Tirsvad Nielsen | S01 | Accepted by S01, the Product Owner<br>Reviews open issue updated | [16183cc] |
+| 2026-10-08 | Accepted | Jens Tirsvad Nielsen | S01 | Reviews open issue updated after the code reviews (`RC-014` to `RC-017`)<br>Accepted by S01, the Product Owner | pending |
 
 ---
 
@@ -94,7 +94,7 @@ Each milestone needs the previous one `Accepted` with a Go review. A No-Go retur
 - **Development tools:** ruff and mypy are added as development dependencies, beyond the pytest the brief names, because `QC-PY-001` requires a formatter, a linter and (optionally) a strict type check. They are not runtime dependencies.
 - **Continuous integration host:** the workflow lives in `.github/workflows/ci.yml`, which GitHub Actions and Gitea Actions both read. Whether the Gitea host has a runner is not known.
 - **Diagram:** the PlantUML Gantt chart is not rendered yet because no PlantUML server is configured (`render-diagrams.sh --server <url>`).
-- **Reviews:** [BC-001], [SA-001], `DICT-001` and the four milestones were reviewed and ended in `Go` on 2026-10-07 (`RC-007` to `RC-013`, which re-review `RC-001` to `RC-006`); their Version History rows are `Accepted`. S01 accepted, in chat, that the author is also the reviewer, because the project has one person and no governance document exists. This plan has no checklist; S01 accepted it directly on 2026-10-08. S01 waived the plan-first gate in chat on 2026-10-07 for the first build, so the code of all four milestones was written before any document was reviewed; the waiver does not carry over to the next request. The code has not been reviewed against `QC-PY-001` yet.
+- **Reviews:** [BC-001], [SA-001], `DICT-001` and the four milestones were reviewed and ended in `Go` on 2026-10-07 (`RC-007` to `RC-013`, which re-review `RC-001` to `RC-006`); their Version History rows are `Accepted`. The code of the four milestones was reviewed against `QC-PY-001` and ended in `Go` on 2026-10-08 (`RC-014` to `RC-017`). S01 accepted, in chat, that the author is also the reviewer, because the project has one person and no governance document exists. This plan has no checklist; S01 accepted it directly on 2026-10-08. S01 waived the plan-first gate in chat on 2026-10-07 for the first build, so the code of all four milestones was written before any document was reviewed; the waiver does not carry over to the next request.
 - **GitHub:** issues are synced to the `origin` remote (the Gitea host) only; the GitHub mirror gets the description and topics but no milestones or issues.
 
 ---
@@ -105,7 +105,6 @@ Each milestone needs the previous one `Accepted` with a Go review. A No-Go retur
 [MIL-002]: ./milestones/mil-002-square-and-dashed-line.md
 [MIL-003]: ./milestones/mil-003-shapes-and-random-color.md
 [MIL-004]: ./milestones/mil-004-random-walk-and-spirograph.md
-[4b3391b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4b3391b22626b49aca06a7c265c1d0be93d1155d
 [MIL-001 milestone]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/milestone/70
 [MIL-002 milestone]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/milestone/71
 [MIL-003 milestone]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/milestone/72
