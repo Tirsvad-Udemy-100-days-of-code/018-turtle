@@ -1,0 +1,38 @@
+# Doxygen configuration for the Turtle Challenges source documentation.
+#
+# Build:  doxygen Doxyfile
+# Output: build/html/index.html
+#
+# Only the settings that differ from Doxygen's defaults are listed. The full
+# list with explanations is produced by `doxygen -g`.
+
+PROJECT_NAME           = "Turtle Challenges"
+PROJECT_BRIEF          = "Turtle graphics exercises from day 18 of Udemy's 100 Days of Code"
+OUTPUT_DIRECTORY       = build
+HTML_OUTPUT            = html
+
+# Python source: a docstring that starts with """! carries Doxygen commands
+# (@brief, @param, ...); without the "!" Doxygen prints them as plain text.
+# The README is the main page.
+INPUT                  = src README.md
+FILE_PATTERNS          = *.py *.md
+RECURSIVE              = YES
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = NO
+USE_MDFILE_AS_MAINPAGE = README.md
+AUTOLINK_SUPPORT       = YES
+
+# Show every module, class, function and constant: nothing may stay
+# undocumented, a partly documented parameter list is an error, and any warning
+# fails the build. WARN_NO_PARAMDOC stays off because Doxygen would demand an
+# @return for every function annotated `-> None`.
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_INCOMPLETE_DOC = YES
+WARN_NO_PARAMDOC       = NO
+WARN_AS_ERROR          = FAIL_ON_WARNINGS
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO
+QUIET                  = YES
