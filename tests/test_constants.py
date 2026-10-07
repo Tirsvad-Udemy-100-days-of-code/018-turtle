@@ -9,6 +9,10 @@ def test_challenge_names_are_unique() -> None:
     assert len(set(constants.CHALLENGE_NAMES)) == len(constants.CHALLENGE_NAMES)
 
 
+def test_walk_headings_are_the_four_compass_directions() -> None:
+    assert constants.WALK_HEADINGS == (0, 90, 180, 270)
+
+
 def test_palette_has_only_non_empty_names() -> None:
     assert constants.COLOR_PALETTE
     assert all(name for name in constants.COLOR_PALETTE)

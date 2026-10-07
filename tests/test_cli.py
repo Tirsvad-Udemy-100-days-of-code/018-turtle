@@ -5,6 +5,7 @@ from turtle_challenges import cli
 from turtle_challenges.constants import (
     CHALLENGE_NAMES,
     DASH_COUNT,
+    SPIROGRAPH_GAP_DEGREES,
     SQUARE_SIDES,
 )
 from turtle_challenges.pen import Pen, Window
@@ -29,7 +30,7 @@ def fake_pen_and_window(monkeypatch: pytest.MonkeyPatch) -> tuple[FakePen, FakeW
 
 
 def test_every_challenge_name_has_a_challenge() -> None:
-    challenges = cli.build_challenges(FakePen())
+    challenges = cli.build_challenges(FakePen(), SPIROGRAPH_GAP_DEGREES)
 
     assert set(challenges) == set(CHALLENGE_NAMES)
 
@@ -39,6 +40,13 @@ def test_parser_accepts_every_challenge_name(name: str) -> None:
     args = cli.build_parser().parse_args([name])
 
     assert args.challenge == name
+    assert args.gap == SPIROGRAPH_GAP_DEGREES
+
+
+def test_parser_reads_the_spirograph_gap() -> None:
+    args = cli.build_parser().parse_args(["spirograph", "--gap", "7.5"])
+
+    assert args.gap == 7.5
 
 
 def test_parser_rejects_an_unknown_challenge(
@@ -80,6 +88,16 @@ def test_main_runs_the_dashed_line(
     cli.main(["dashed-line"])
 
     assert len(pen.args_of("forward")) == 2 * DASH_COUNT
+
+
+def test_main_passes_the_gap_to_the_spirograph(
+    fake_pen_and_window: tuple[FakePen, FakeWindow],
+) -> None:
+    pen, _ = fake_pen_and_window
+
+    cli.main(["spirograph", "--gap", "90"])
+
+    assert len(pen.args_of("circle")) == 4
 
 
 def test_main_reports_a_missing_turtle_and_exits_with_status_1(
