@@ -10,6 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [76ac50e] |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Verdict recorded: Go-with-conditions | pending |
 
 ---
 
@@ -23,7 +24,7 @@
 - Language reviewer: none (n/a)
 - Method: a fresh clone of the branch into an empty folder, then the README's Windows PowerShell steps, run on 2026-10-08 on the author's Windows machine; the real command started from that clone; read-only calls to the Gitea and GitHub APIs for continuous integration, settings and pull requests.
 - Reviewer eligibility: S01 is the author and the reviewer; S01 accepted that deviation in chat on 2026-10-07 (see the traceability matrix).
-- Status of this record: draft. The statuses and evidence are the assistant's, from the runs described above; they are not a decision.
+- Status of this record: decided on 2026-10-08 by S01, the reviewer, who recorded the verdict Go-with-conditions on the assistant's evidence. The statuses and evidence are the assistant's, from the runs described above.
 
 ## Checklist Results
 
@@ -39,9 +40,11 @@
 
 ## Overall Verdict
 
-Pending — a draft prepared for the reviewer (S01), who decides and replaces this line with the verdict. Proposed verdict: Go-with-conditions.
+Go-with-conditions — six of the seven success criteria of [BC-001] are met with evidence (1 to 4, 6 and 7). Criterion 5 is not met as the README is written, because its clone URL points at a GitHub repository that does not hold the code until the pull requests are merged and GitHub has them. S01 recorded this verdict on 2026-10-08.
 
-Rationale: six of the seven criteria are met with evidence (1 to 4, 6 and 7). Criterion 5 is not met as the README is written, because its clone URL points at a GitHub repository that does not hold the code until the pull requests are merged and GitHub has them. Nothing is broken in the project itself: the same steps work from the Gitea branch. Go / No-Go criterion 6 of [MIL-004] ("every criterion met") is therefore not yet met, and issue #28 stays open. No date moved, so the Project Plan needs no schedule change.
+The conditions are the first three action items below. Until they are closed, Go / No-Go criterion 6 of [MIL-004] ("every criterion met") is not met and issue #28 stays open. A new record that names this one re-checks the conditions and ends the matter with a `Go`. Nothing is broken in the project itself: the same README steps work from the Gitea branch. No date moved, so the Project Plan needs no schedule change.
+
+Reviewer eligibility: S01 is the author and the reviewer, which the review process does not allow; S01 accepted that deviation in chat on 2026-10-07 and it is recorded in the traceability matrix.
 
 ## Action Items
 
