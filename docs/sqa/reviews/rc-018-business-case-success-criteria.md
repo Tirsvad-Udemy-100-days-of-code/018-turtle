@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [76ac50e] |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Verdict recorded: Go-with-conditions | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Verdict recorded: Go-with-conditions | [54f60a9] |
 
 ---
 
@@ -60,3 +60,4 @@ Reviewer eligibility: S01 is the author and the reviewer, which the review proce
 [BC-001]: ../../business-case.md
 [MIL-004]: ../../milestones/mil-004-random-walk-and-spirograph.md
 [76ac50e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/76ac50e5910f74738251994063d191b55f1a1d28
+[54f60a9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/54f60a951a3a6d3c6c78de373e3b76720e48639c

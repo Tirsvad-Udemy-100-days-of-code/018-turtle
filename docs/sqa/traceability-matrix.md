@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the row for the check of the success criteria of [BC-001], with [RC-018] | [88aee40] |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go-with-conditions of [RC-018] | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go-with-conditions of [RC-018] | [54f60a9] |
 
 ---
 
@@ -77,3 +77,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-017]: ./reviews/rc-017-code-mil-004.md
 [RC-018]: ./reviews/rc-018-business-case-success-criteria.md
 [88aee40]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/88aee4051d3fd7a915bc793c157e421f607e3034
+[54f60a9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/54f60a951a3a6d3c6c78de373e3b76720e48639c
