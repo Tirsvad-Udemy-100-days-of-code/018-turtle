@@ -68,8 +68,12 @@ CHALLENGE_SQUARE = "square"
 ## Command line name of challenge 2.
 CHALLENGE_DASHED_LINE = "dashed-line"
 
+## Command line name of challenge 3.
+CHALLENGE_SHAPES = "shapes"
+
 ## Names of the challenges on the command line, in the order of the course.
 CHALLENGE_NAMES: tuple[str, ...] = (
     CHALLENGE_SQUARE,
     CHALLENGE_DASHED_LINE,
+    CHALLENGE_SHAPES,
 )

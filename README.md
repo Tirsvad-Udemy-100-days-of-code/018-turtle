@@ -75,8 +75,9 @@ python -m turtle_challenges dashed-line
 | --- | --- | --- |
 | 1. Draw a square | `turtle-challenges square` | `draw_square` |
 | 2. Draw a dashed line | `turtle-challenges dashed-line` | `draw_dashed_line` |
+| 3. Draw different shapes | `turtle-challenges shapes` | `draw_shape`, `draw_shapes`, `random_color` |
 
-Challenges 3 to 5 are added by milestones 003 and 004.
+Challenges 4 and 5 are added by milestone 004.
 
 `turtle-challenges --help` lists the challenges. If the command prints that the turtle module needs Tk, install Tk as described under Requirements.
 
@@ -132,8 +133,10 @@ Open `build/html/index.html` in a browser. Any Doxygen warning fails the build, 
 │   ├── constants.py           every constant of the project
 │   ├── pen.py                 the Pen and Window protocols the challenges use
 │   ├── window.py              opens the turtle window and creates the turtle
+│   ├── colors.py              random_color and random_palette_color
 │   ├── square.py              challenge 1: draw_square
 │   ├── dashed_line.py         challenge 2: draw_dashed_line
+│   ├── shapes.py              challenge 3: draw_shape, draw_shapes
 │   └── cli.py                 the turtle-challenges command
 ├── tests/                     pytest tests and the recording fake pen
 ├── Doxyfile                   Doxygen configuration

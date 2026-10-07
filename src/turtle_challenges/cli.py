@@ -10,10 +10,12 @@ from functools import partial
 from turtle_challenges.constants import (
     CHALLENGE_DASHED_LINE,
     CHALLENGE_NAMES,
+    CHALLENGE_SHAPES,
     CHALLENGE_SQUARE,
 )
 from turtle_challenges.dashed_line import draw_dashed_line
 from turtle_challenges.pen import Pen
+from turtle_challenges.shapes import draw_shapes
 from turtle_challenges.square import draw_square
 from turtle_challenges.window import (
     TurtleUnavailableError,
@@ -52,6 +54,7 @@ def build_challenges(pen: Pen) -> dict[str, Callable[[], None]]:
     return {
         CHALLENGE_SQUARE: partial(draw_square, pen),
         CHALLENGE_DASHED_LINE: partial(draw_dashed_line, pen),
+        CHALLENGE_SHAPES: partial(draw_shapes, pen),
     }
 
 
