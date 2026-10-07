@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the row for the check of the success criteria of [BC-001], with [RC-018] | [88aee40] |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go-with-conditions of [RC-018] | [54f60a9] |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go of [RC-019], the re-check of [RC-018] | pending |
 
 ---
 
@@ -36,14 +36,14 @@ updated whenever an artifact instance is created or reviewed.
 | Python source code of milestone 002 (`src/`, `tests/`, branch `mil-002-square-and-dashed-line`) | PY | - | - | [MIL-002] | - | [RC-015] (Go) |
 | Python source code of milestone 003 (`src/`, `tests/`, branch `mil-003-shapes-and-random-color`) | PY | - | - | [MIL-003] | - | [RC-016] (Go) |
 | Python source code of milestone 004 (`src/`, `tests/`, branch `mil-004-random-walk-and-spirograph`) | PY | - | - | [MIL-004] | - | [RC-017] (Go) |
-| Success criteria of [BC-001], checked against the delivered repository for the gate of [MIL-004] | BC | en | it | [BC-001], [MIL-004] | - | [RC-018] (Go-with-conditions) |
+| Success criteria of [BC-001], checked against the delivered repository for the gate of [MIL-004] | BC | en | it | [BC-001], [MIL-004] | - | [RC-019] (Go), the re-check of [RC-018] (Go-with-conditions) |
 
 ## Coverage Notes
 
 - `-` in Upstream means foundational ([SA-001] is the foundation of the stakeholder IDs); in Downstream it means nothing is built on it yet ([MIL-004] is the last gateway; the source code is listed per milestone in the `PY` rows); in Last Reviewed it means no `RC-*` exists.
 - [PP-001] has no `RC-*` because the Project Plan has no QC checklist; the Product Owner accepted it directly on 2026-10-08.
 - The `PY` rows list the Python code each milestone added or changed, reviewed against `QC-PY-001`. Their records, [RC-014] to [RC-017], ended in `Go` on 2026-10-08; a `-` in Language and Domain is right for source code, a technical type.
-- [RC-018] checks the seven success criteria of [BC-001] against the delivered repository, as the evidence for the gate of [MIL-004]. It ended in Go-with-conditions on 2026-10-08: criterion 5 is not met until the code is on `main` and on GitHub, and its first three action items are the conditions. A later record that names it re-checks them.
+- [RC-018] checks the seven success criteria of [BC-001] against the delivered repository, as the evidence for the gate of [MIL-004]. It ended in Go-with-conditions on 2026-10-08: criterion 5 is not met until the code is on `main` and on GitHub, and its first three action items are the conditions. A later record that names it re-checks them. Its conditions were re-checked in [RC-019], which ended in Go on 2026-10-08, so the row lists [RC-019] as the latest record.
 - Each artifact lists its latest review record: the delta re-review ([RC-008] to [RC-013]) of the first review ([RC-001] to [RC-006]), or [RC-007] for [DICT-001]. All of them ended in `Go` on 2026-10-07.
 - S01 is the author and also the reviewer of every artifact. The review process does not allow this; S01 accepted the deviation in chat on 2026-10-07 because the project has one person and no governance document (`GOV`) exists.
 - No instance exists yet for the types KPI, RA, BMC, BPMN, UCD, US, UC, DM, SSD, OC, SD, DCD, ERD, ADR, GOV or TRR. One of them matters for the open reviews: GOV (the rule that the reviewer is not the author).
@@ -76,5 +76,5 @@ updated whenever an artifact instance is created or reviewed.
 [RC-016]: ./reviews/rc-016-code-mil-003.md
 [RC-017]: ./reviews/rc-017-code-mil-004.md
 [RC-018]: ./reviews/rc-018-business-case-success-criteria.md
-[88aee40]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/88aee4051d3fd7a915bc793c157e421f607e3034
+[RC-019]: ./reviews/rc-019-business-case-success-criteria-recheck.md
 [54f60a9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/54f60a951a3a6d3c6c78de373e3b76720e48639c
