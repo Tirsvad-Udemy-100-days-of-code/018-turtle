@@ -117,7 +117,9 @@ mypy
 
 ## Continuous integration
 
-`.github/workflows/ci.yml` runs on every push to `main` and on every pull request. It is read by both GitHub Actions and Gitea Actions. It sets up Python 3.13, upgrades `pip`, installs the project with its development tools, then runs ruff (lint and format check), mypy, pytest and the Doxygen build. No step opens a turtle window.
+`.gitea/workflows/ci.yml` runs on Gitea Actions on every push and on every pull request. It sets up Python 3.13, upgrades `pip`, installs the project with its development tools, then runs pytest, ruff (lint and format check) and mypy. It does not build the source documentation: run `doxygen Doxyfile` yourself, as the next section shows. No step opens a turtle window.
+
+The workflow lives in `.gitea/workflows` and not in `.github/workflows`, so GitHub does not run it and pushing to the GitHub mirror needs no workflow permission.
 
 ## Build the source documentation
 
@@ -133,7 +135,7 @@ Open `build/html/index.html` in a browser. Any Doxygen warning fails the build, 
 
 ```text
 .
-├── .github/workflows/ci.yml   continuous integration
+├── .gitea/workflows/ci.yml    continuous integration
 ├── docs/                      project documents: business case, plan, milestones
 ├── src/turtle_challenges/     the package
 │   ├── constants.py           every constant of the project
