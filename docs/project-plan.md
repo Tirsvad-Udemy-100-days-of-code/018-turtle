@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-07 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-07 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [4b3391b] |
 
 ---
 
@@ -104,3 +104,4 @@ Each milestone needs the previous one `Accepted` with a Go review. A No-Go retur
 [MIL-002]: ./milestones/mil-002-square-and-dashed-line.md
 [MIL-003]: ./milestones/mil-003-shapes-and-random-color.md
 [MIL-004]: ./milestones/mil-004-random-walk-and-spirograph.md
+[4b3391b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4b3391b22626b49aca06a7c265c1d0be93d1155d

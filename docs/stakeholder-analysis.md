@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-07 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-07 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [4b3391b] |
 
 ---
 
@@ -88,3 +88,4 @@ Signed off by S01 on 2026-10-07, with the `Go` verdict of [RC-009].
 
 [BC-001]: ./business-case.md
 [RC-009]: ./sqa/reviews/rc-009-stakeholder-analysis-re-review.md
+[4b3391b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4b3391b22626b49aca06a7c265c1d0be93d1155d

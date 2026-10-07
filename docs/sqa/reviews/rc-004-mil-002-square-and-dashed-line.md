@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-07 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-07 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [4b3391b] |
 
 ---
 
@@ -67,3 +67,4 @@ Go-with-conditions — the criteria of the type's checklist pass, and the langua
 [QC-LANG-001]: ../../../framework/qc/qc-language-domain.md
 [BC-001]: ../../business-case.md
 [RC-011]: ./rc-011-mil-002-re-review.md
+[4b3391b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4b3391b22626b49aca06a7c265c1d0be93d1155d

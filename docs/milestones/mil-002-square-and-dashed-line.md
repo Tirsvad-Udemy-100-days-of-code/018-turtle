@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-07 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-07 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [4b3391b] |
 
 ---
 
@@ -75,3 +75,4 @@ The `mil-002-square-and-dashed-line` branch, opened as one pull request, contain
 ---
 
 [BC-001]: ../business-case.md
+[4b3391b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4b3391b22626b49aca06a7c265c1d0be93d1155d
