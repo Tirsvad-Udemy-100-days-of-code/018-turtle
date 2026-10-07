@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [03700b8] |
 
 ---
 
@@ -58,3 +58,4 @@ Rationale: all seven success criteria are met on `main`. The conditions of [RC-0
 [BC-001]: ../../business-case.md
 [RC-018]: ./rc-018-business-case-success-criteria.md
 [MIL-004]: ../../milestones/mil-004-random-walk-and-spirograph.md
+[03700b8]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/03700b8de2568c3f50baf99422c3b47bb68975b3
