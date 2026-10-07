@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [76ac50e] |
 
 ---
 
@@ -56,3 +56,4 @@ Rationale: six of the seven criteria are met with evidence (1 to 4, 6 and 7). Cr
 
 [BC-001]: ../../business-case.md
 [MIL-004]: ../../milestones/mil-004-random-walk-and-spirograph.md
+[76ac50e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/76ac50e5910f74738251994063d191b55f1a1d28
