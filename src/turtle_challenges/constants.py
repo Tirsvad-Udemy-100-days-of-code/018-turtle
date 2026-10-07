@@ -77,6 +77,12 @@ WALK_PEN_SIZE = 10
 ## Challenge 4: headings of a step: east, north, west and south, in degrees.
 WALK_HEADINGS: tuple[int, ...] = (0, 90, 180, 270)
 
+## Challenge 5: radius of every circle of the spirograph, in turtle units.
+SPIROGRAPH_RADIUS = 100
+
+## Challenge 5: degrees the heading turns after each circle.
+SPIROGRAPH_GAP_DEGREES = 5
+
 ## Command line name of challenge 1.
 CHALLENGE_SQUARE = "square"
 
