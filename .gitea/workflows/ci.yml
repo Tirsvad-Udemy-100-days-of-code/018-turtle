@@ -1,0 +1,43 @@
+# Continuous integration for the Quiz Game.
+#
+# Run by Gitea Actions. The file lives in .gitea/workflows, not .github/workflows:
+# GitHub refuses pushes that touch .github/workflows from a token without the
+# workflow scope, and that stopped the push mirror to GitHub. Runs the same
+# checks as the README, "Run the tests".
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install the development tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --group dev
+
+      - name: Lint
+        run: ruff check src tests
+
+      - name: Check formatting
+        run: ruff format --check src tests
+
+      - name: Check types
+        run: mypy --strict src tests
+
+      - name: Run the tests
+        run: python -m pytest
