@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go-with-conditions of [RC-018] | [54f60a9] |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go of [RC-019], the re-check of [RC-018] | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Recorded the verdict Go of [RC-019], the re-check of [RC-018] | [6dac0d6] |
 
 ---
 
@@ -78,3 +78,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-018]: ./reviews/rc-018-business-case-success-criteria.md
 [RC-019]: ./reviews/rc-019-business-case-success-criteria-recheck.md
 [54f60a9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/54f60a951a3a6d3c6c78de373e3b76720e48639c
+[6dac0d6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/6dac0d6762b49bf52c2c0aeebbf29ec4e56efbe1

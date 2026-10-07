@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [03700b8] |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Verdict recorded: Go | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Verdict recorded: Go | [6dac0d6] |
 
 ---
 
@@ -62,3 +62,4 @@ Reviewer eligibility: S01 is the author and the reviewer, which the review proce
 [RC-018]: ./rc-018-business-case-success-criteria.md
 [MIL-004]: ../../milestones/mil-004-random-walk-and-spirograph.md
 [03700b8]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/03700b8de2568c3f50baf99422c3b47bb68975b3
+[6dac0d6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/6dac0d6762b49bf52c2c0aeebbf29ec4e56efbe1
