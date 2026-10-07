@@ -20,6 +20,9 @@ COLOR_CHANNEL_MIN = 0
 ## Largest value of one color channel.
 COLOR_CHANNEL_MAX = COLOR_MODE
 
+## Degrees in a full turn.
+FULL_TURN_DEGREES = 360
+
 ## Degrees in a right angle.
 RIGHT_ANGLE_DEGREES = 90
 
@@ -37,6 +40,15 @@ DASH_LENGTH = 10
 
 ## Challenge 2: length of the gap after each dash, in turtle units.
 GAP_LENGTH = 10
+
+## Challenge 3: fewest sides of a polygon (a triangle).
+MIN_POLYGON_SIDES = 3
+
+## Challenge 3: most sides of a polygon drawn in a row (a decagon).
+MAX_POLYGON_SIDES = 10
+
+## Challenge 3: length of one side of a polygon, in turtle units.
+POLYGON_SIDE_LENGTH = 100
 
 ## Challenge 3: named colors a polygon is drawn in.
 COLOR_PALETTE: tuple[str, ...] = (

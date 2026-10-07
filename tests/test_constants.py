@@ -12,3 +12,8 @@ def test_challenge_names_are_unique() -> None:
 def test_palette_has_only_non_empty_names() -> None:
     assert constants.COLOR_PALETTE
     assert all(name for name in constants.COLOR_PALETTE)
+
+
+def test_polygon_range_runs_from_triangle_to_decagon() -> None:
+    assert constants.MIN_POLYGON_SIDES == 3
+    assert constants.MAX_POLYGON_SIDES == 10
