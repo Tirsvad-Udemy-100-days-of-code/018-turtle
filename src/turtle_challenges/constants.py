@@ -14,6 +14,12 @@ WINDOW_TITLE = "Turtle Challenges"
 ## colors can be given as RGB tuples from 0 to 255.
 COLOR_MODE = 255
 
+## Smallest value of one color channel.
+COLOR_CHANNEL_MIN = 0
+
+## Largest value of one color channel.
+COLOR_CHANNEL_MAX = COLOR_MODE
+
 ## Degrees in a right angle.
 RIGHT_ANGLE_DEGREES = 90
 
@@ -31,6 +37,18 @@ DASH_LENGTH = 10
 
 ## Challenge 2: length of the gap after each dash, in turtle units.
 GAP_LENGTH = 10
+
+## Challenge 3: named colors a polygon is drawn in.
+COLOR_PALETTE: tuple[str, ...] = (
+    "CornflowerBlue",
+    "DarkOrchid",
+    "IndianRed",
+    "DeepSkyBlue",
+    "LightSeaGreen",
+    "wheat",
+    "SlateGray",
+    "SeaGreen",
+)
 
 ## Command line name of challenge 1.
 CHALLENGE_SQUARE = "square"
