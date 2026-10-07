@@ -76,8 +76,14 @@ python -m turtle_challenges dashed-line
 | 1. Draw a square | `turtle-challenges square` | `draw_square` |
 | 2. Draw a dashed line | `turtle-challenges dashed-line` | `draw_dashed_line` |
 | 3. Draw different shapes | `turtle-challenges shapes` | `draw_shape`, `draw_shapes`, `random_color` |
+| 4. Generate a random walk | `turtle-challenges random-walk` | `random_walk` |
+| 5. Draw a spirograph | `turtle-challenges spirograph` | `draw_spirograph` |
 
-Challenges 4 and 5 are added by milestone 004.
+The spirograph takes the number of degrees between two circles with `--gap` (default 5):
+
+```bash
+turtle-challenges spirograph --gap 10
+```
 
 `turtle-challenges --help` lists the challenges. If the command prints that the turtle module needs Tk, install Tk as described under Requirements.
 
@@ -137,6 +143,8 @@ Open `build/html/index.html` in a browser. Any Doxygen warning fails the build, 
 │   ├── square.py              challenge 1: draw_square
 │   ├── dashed_line.py         challenge 2: draw_dashed_line
 │   ├── shapes.py              challenge 3: draw_shape, draw_shapes
+│   ├── random_walk.py         challenge 4: random_walk
+│   ├── spirograph.py          challenge 5: draw_spirograph
 │   └── cli.py                 the turtle-challenges command
 ├── tests/                     pytest tests and the recording fake pen
 ├── Doxyfile                   Doxygen configuration
