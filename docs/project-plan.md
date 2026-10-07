@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Deprecated | Jens Tirsvad Nielsen | S01 | Accepted by S01, the Product Owner<br>Reviews open issue updated | [16183cc] |
-| 2026-10-08 | Accepted | Jens Tirsvad Nielsen | S01 | Reviews open issue updated after the code reviews (`RC-014` to `RC-017`)<br>Accepted by S01, the Product Owner | pending |
+| 2026-10-08 | Accepted | Jens Tirsvad Nielsen | S01 | Reviews open issue updated after the code reviews (`RC-014` to `RC-017`)<br>Accepted by S01, the Product Owner | [c893fc1] |
 
 ---
 
@@ -110,3 +110,4 @@ Each milestone needs the previous one `Accepted` with a Go review. A No-Go retur
 [MIL-003 milestone]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/milestone/72
 [MIL-004 milestone]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/milestone/73
 [16183cc]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/16183ccff68a82c6a97c00333447c6faefa11503
+[c893fc1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/c893fc1a1780a0d0e7a023fde00f42e6b4eaffb7
