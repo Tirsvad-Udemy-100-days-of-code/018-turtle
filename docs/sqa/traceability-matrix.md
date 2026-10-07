@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the rows for the code of each milestone, with [RC-014] to [RC-017] | [4d7cc33] |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the row for the check of the success criteria of [BC-001], with [RC-018] | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the row for the check of the success criteria of [BC-001], with [RC-018] | [88aee40] |
 
 ---
 
@@ -77,3 +77,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-017]: ./reviews/rc-017-code-mil-004.md
 [RC-018]: ./reviews/rc-018-business-case-success-criteria.md
 [4d7cc33]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4d7cc33cac2c090c663409abb1e7ab0a34d871f5
+[88aee40]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/88aee4051d3fd7a915bc793c157e421f607e3034
