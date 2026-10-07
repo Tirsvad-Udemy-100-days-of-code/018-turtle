@@ -31,3 +31,15 @@ DASH_LENGTH = 10
 
 ## Challenge 2: length of the gap after each dash, in turtle units.
 GAP_LENGTH = 10
+
+## Command line name of challenge 1.
+CHALLENGE_SQUARE = "square"
+
+## Command line name of challenge 2.
+CHALLENGE_DASHED_LINE = "dashed-line"
+
+## Names of the challenges on the command line, in the order of the course.
+CHALLENGE_NAMES: tuple[str, ...] = (
+    CHALLENGE_SQUARE,
+    CHALLENGE_DASHED_LINE,
+)

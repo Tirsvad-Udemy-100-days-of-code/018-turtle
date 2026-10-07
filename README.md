@@ -64,11 +64,37 @@ python -m pip install -e ".[dev]"
 
 ## Run
 
-There is no challenge to run yet: the challenges arrive with milestones 002 to 004. To check the set-up, run the tests described in the next section.
+With the virtual environment active, run one challenge by name. A window opens, the turtle draws, and the window closes when you click it.
+
+```bash
+turtle-challenges square
+python -m turtle_challenges dashed-line
+```
+
+| Challenge | Command | Function |
+| --- | --- | --- |
+| 1. Draw a square | `turtle-challenges square` | `draw_square` |
+| 2. Draw a dashed line | `turtle-challenges dashed-line` | `draw_dashed_line` |
+
+Challenges 3 to 5 are added by milestones 003 and 004.
+
+`turtle-challenges --help` lists the challenges. If the command prints that the turtle module needs Tk, install Tk as described under Requirements.
+
+To use the functions in your own code, create a window and a turtle, then pass the turtle as the first argument. The assignment's functions use one global turtle; here the turtle is a parameter, which is what lets the tests run without a window:
+
+```python
+from turtle_challenges import draw_square
+from turtle_challenges.window import create_pen, create_window
+
+window = create_window()
+tim = create_pen()
+draw_square(tim)
+window.exitonclick()
+```
 
 ## Run the tests
 
-The tests never open a window. With the virtual environment active:
+The tests never open a window: they pass a recording fake in place of the turtle and check the moves it recorded. With the virtual environment active:
 
 ```bash
 python -m pytest
@@ -103,8 +129,13 @@ Open `build/html/index.html` in a browser. Any Doxygen warning fails the build, 
 ├── .github/workflows/ci.yml   continuous integration
 ├── docs/                      project documents: business case, plan, milestones
 ├── src/turtle_challenges/     the package
-│   └── constants.py           every constant of the project
-├── tests/                     pytest tests
+│   ├── constants.py           every constant of the project
+│   ├── pen.py                 the Pen and Window protocols the challenges use
+│   ├── window.py              opens the turtle window and creates the turtle
+│   ├── square.py              challenge 1: draw_square
+│   ├── dashed_line.py         challenge 2: draw_dashed_line
+│   └── cli.py                 the turtle-challenges command
+├── tests/                     pytest tests and the recording fake pen
 ├── Doxyfile                   Doxygen configuration
 ├── pyproject.toml             project, tool and dependency configuration
 └── LICENSE
