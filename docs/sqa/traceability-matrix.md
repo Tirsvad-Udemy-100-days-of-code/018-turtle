@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-07 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [4b3391b] |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the rows for the code of each milestone, with [RC-014] to [RC-017] | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Added the rows for the code of each milestone, with [RC-014] to [RC-017] | [4d7cc33] |
 
 ---
 
@@ -74,3 +74,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-015]: ./reviews/rc-015-code-mil-002.md
 [RC-016]: ./reviews/rc-016-code-mil-003.md
 [RC-017]: ./reviews/rc-017-code-mil-004.md
+[4d7cc33]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4d7cc33cac2c090c663409abb1e7ab0a34d871f5

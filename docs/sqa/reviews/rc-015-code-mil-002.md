@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-10-08 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [4d7cc33] |
 
 ---
 
@@ -65,3 +65,4 @@ The row of the code in the traceability matrix is updated, and issue #15 closes 
 [MIL-002]: ../../milestones/mil-002-square-and-dashed-line.md
 [QC-PY-001]: ../../../framework/qc/qc-programming-python.md
 [RC-014]: ./rc-014-code-mil-001.md
+[4d7cc33]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/018-turtle/commit/4d7cc33cac2c090c663409abb1e7ab0a34d871f5
