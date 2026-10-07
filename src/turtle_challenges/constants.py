@@ -26,6 +26,9 @@ FULL_TURN_DEGREES = 360
 ## Degrees in a right angle.
 RIGHT_ANGLE_DEGREES = 90
 
+## Turtle speed setting for "fastest": no animation between moves.
+FASTEST_SPEED = 0
+
 ## Challenge 1: number of sides of a square.
 SQUARE_SIDES = 4
 
@@ -61,6 +64,18 @@ COLOR_PALETTE: tuple[str, ...] = (
     "SlateGray",
     "SeaGreen",
 )
+
+## Challenge 4: number of steps of the random walk.
+WALK_STEPS = 200
+
+## Challenge 4: distance of one step, in turtle units.
+WALK_STEP_DISTANCE = 30
+
+## Challenge 4: thickness of the line, in pixels.
+WALK_PEN_SIZE = 10
+
+## Challenge 4: headings of a step: east, north, west and south, in degrees.
+WALK_HEADINGS: tuple[int, ...] = (0, 90, 180, 270)
 
 ## Command line name of challenge 1.
 CHALLENGE_SQUARE = "square"
